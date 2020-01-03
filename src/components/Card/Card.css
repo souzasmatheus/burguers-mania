@@ -1,0 +1,19 @@
+.card-container {
+  user-select: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px grey;
+  width: var(--card-width);
+  height: var(--card-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-container img {
+  height: 65%;
+}
+
+.card-container p {
+  font-family: 'Stoke', serif;
+}
