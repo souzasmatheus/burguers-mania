@@ -1,4 +1,13 @@
 .app-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: var(--app-width);
+}
+
+.types-container {
+  margin-top: 5%;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
 }

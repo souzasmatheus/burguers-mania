@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Stoke&display=swap');
 
 :root {
+  --app-width: 480px;
   --card-width: 130px;
 }
 
@@ -8,4 +9,6 @@ body,
 p {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
