@@ -3,7 +3,7 @@ import './App.css';
 import Card from './components/Card/Card';
 
 function App({ menu }) {
-  const [selectedType, setSelectedType] = useState('Ingredientes');
+  const [selectedType, setSelectedType] = useState('Lanches');
   const [selectedItem, setSelectedItem] = useState(null);
 
   const types = [];
@@ -13,7 +13,10 @@ function App({ menu }) {
         imgPath={menu[key].imgPath}
         text={`${key}`}
         isSelected={selectedType === key ? true : false}
-        handler={setSelectedType}
+        handler={type => {
+          setSelectedType(type);
+          setSelectedItem(null);
+        }}
       />
     );
   }
@@ -52,6 +55,34 @@ function App({ menu }) {
       >
         {selectedType && list}
       </div>
+      {selectedType === 'Lanches' && selectedItem && (
+        <div className="info-container">
+          <Card
+            imgPath={menu[selectedType].list[selectedItem].imgPath}
+            text={`${selectedItem}`}
+            isSelected={false}
+            handler={() => {
+              return;
+            }}
+          />
+          <p>{menu[selectedType].list[selectedItem].info}</p>
+          <br />
+          <p>Preço: R${menu[selectedType].list[selectedItem].price}</p>
+        </div>
+      )}
+      {selectedType === 'Ingredientes' && selectedItem && (
+        <div className="info-container">
+          <Card
+            imgPath={menu[selectedType].list[selectedItem].imgPath}
+            text={`${selectedItem}`}
+            isSelected={false}
+            handler={() => {
+              return;
+            }}
+          />
+          <p>{menu[selectedType].list[selectedItem].info}</p>
+        </div>
+      )}
     </div>
   );
 }

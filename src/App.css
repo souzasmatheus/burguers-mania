@@ -19,3 +19,19 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.info-container {
+  border-radius: 5px;
+  background-color: #00d31c;
+  margin: 5% 0;
+  padding-bottom: 3%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-container p {
+  font-family: 'Stoke', serif;
+  text-align: center;
+}
