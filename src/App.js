@@ -3,7 +3,8 @@ import './App.css';
 import Card from './components/Card/Card';
 
 function App({ menu }) {
-  const [selectedType, setSelectedType] = useState(true);
+  const [selectedType, setSelectedType] = useState('Ingredientes');
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const types = [];
   for (let key in menu) {
@@ -13,6 +14,18 @@ function App({ menu }) {
         text={`${key}`}
         isSelected={selectedType === key ? true : false}
         handler={setSelectedType}
+      />
+    );
+  }
+
+  const list = [];
+  for (let item in menu[selectedType].list) {
+    list.push(
+      <Card
+        imgPath={menu[selectedType].list[item].imgPath}
+        text={`${item}`}
+        isSelected={selectedItem === item ? true : false}
+        handler={setSelectedItem}
       />
     );
   }
@@ -28,6 +41,16 @@ function App({ menu }) {
         }
       >
         {types}
+      </div>
+      <div
+        className="list-container"
+        style={
+          selectedItem
+            ? { paddingBottom: '5%', borderBottom: 'solid 1px #bbb' }
+            : {}
+        }
+      >
+        {selectedType && list}
       </div>
     </div>
   );

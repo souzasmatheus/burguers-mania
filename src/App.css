@@ -11,3 +11,11 @@
   display: flex;
   justify-content: space-around;
 }
+
+.list-container {
+  margin-top: 5%;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
