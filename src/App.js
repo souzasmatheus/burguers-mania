@@ -28,7 +28,12 @@ function App({ menu }) {
         imgPath={menu[selectedType].list[item].imgPath}
         text={`${item}`}
         isSelected={selectedItem === item ? true : false}
-        handler={setSelectedItem}
+        handler={item => {
+          setSelectedItem(item);
+          setTimeout(() => {
+            window.scrollTo(0, document.body.scrollHeight);
+          }, 1);
+        }}
       />
     );
   }
