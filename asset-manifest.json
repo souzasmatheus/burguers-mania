@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/burguers-mania/static/css/main.dae9b6fa.chunk.css",
+    "main.js": "/burguers-mania/static/js/main.12885c8e.chunk.js",
+    "main.js.map": "/burguers-mania/static/js/main.12885c8e.chunk.js.map",
+    "runtime-main.js": "/burguers-mania/static/js/runtime-main.c95cef6f.js",
+    "runtime-main.js.map": "/burguers-mania/static/js/runtime-main.c95cef6f.js.map",
+    "static/js/2.539f2b53.chunk.js": "/burguers-mania/static/js/2.539f2b53.chunk.js",
+    "static/js/2.539f2b53.chunk.js.map": "/burguers-mania/static/js/2.539f2b53.chunk.js.map",
+    "index.html": "/burguers-mania/index.html",
+    "precache-manifest.cb1f9f313a449050ade02cc98d4592fb.js": "/burguers-mania/precache-manifest.cb1f9f313a449050ade02cc98d4592fb.js",
+    "service-worker.js": "/burguers-mania/service-worker.js",
+    "static/css/main.dae9b6fa.chunk.css.map": "/burguers-mania/static/css/main.dae9b6fa.chunk.css.map",
+    "static/js/2.539f2b53.chunk.js.LICENSE": "/burguers-mania/static/js/2.539f2b53.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c95cef6f.js",
+    "static/js/2.539f2b53.chunk.js",
+    "static/css/main.dae9b6fa.chunk.css",
+    "static/js/main.12885c8e.chunk.js"
+  ]
+}
