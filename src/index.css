@@ -5,6 +5,13 @@
   --card-width: 130px;
 }
 
+@media screen and (max-width: 480px) {
+  :root {
+    --app-width: 400px;
+    --card-width: 120px;
+  }
+}
+
 body,
 p {
   margin: 0;
